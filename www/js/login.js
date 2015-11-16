@@ -17,7 +17,7 @@ if( $("#codigo").val() == "" )
 		$('#token').show();
 		$('#link').show();
 		$('#link').append($('<input>',{id:'secreto',value:respuestaServer.secreto, type:'hidden'}));
-    $('#link').append($('<input>',{id:'secreto',value:respuestaServer.secreto, type:'hidden'}));
+    $('#link').append($('<img>',{id:'qr',src:respuestaServer.qrCodeUrl}));
 		console.log("respuestaServer.validacion: "+respuestaServer.validacion+"\nsecreto: "+respuestaServer.secreto)
     alert("ingrese este valor en GA: "+respuestaServer.secreto)
     /*  SmsPlugin.prototype.send('542615747522', respuestaServer.secreto, 'INTENT',
