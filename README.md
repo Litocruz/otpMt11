@@ -15,6 +15,10 @@ autenticacion de doble factor utilizando libreria google Authenticator
 se puede escanear el codigo qr
 1. ingresar token
 
+#Modo movil
+1. Descargar de Google Play la app de Phonegap ```https://play.google.com/store/apps/details?id=com.adobe.phonegap.app&hl=es```
+2. Abrila e ingresar ```litocruz.noip.me:3000```
+
 # Consultas
 julian.lamadrid@gmail.com
 
