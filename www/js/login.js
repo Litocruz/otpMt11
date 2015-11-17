@@ -45,7 +45,7 @@ else
 	archivoValidacion = "http://litocruz.noip.me:8080/otp/validarCodigo.php?jsoncallback=?"
 	$.getJSON( archivoValidacion, { usuario:datosUsuario ,contrasena:datosContrasena ,codigo:datosCodigo ,secreto:datosSecreto})
 	.done(function(respuestaServer) {
-		if(respuestaServer.codigoValidacion == 11){//verificamos si ya estamos en el segundo paso, de no sere asi no ingresa a este laso
+		if(respuestaServer.codigoValidacion == 11){//verificamos si ya estamos en el segundo paso, de no ser asi no ingresa a este lazo
 				/// la validacion es correcta, muestra la pantalla "home"
 				$.mobile.changePage("#home")  
 		}
