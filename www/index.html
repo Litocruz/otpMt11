@@ -25,16 +25,16 @@
       			<label> Usuario </label>
       			<input type="text" id="nombredeusuario" name="nombredeusuario">
       			<label> Password </label>
-     			<input type="password" id="clave" name="clave" >
-			<div id="token" style="display:none">
-      			<label> Token </label>
-     			<input type="text" id="codigo" name="codigo" >
-			</div>
+            <input type="password" id="clave" name="clave" >
+            <div id="token" style="display:none">
+                  <label> Token </label>
+                <input type="text" id="codigo" name="codigo" >
+            </div>
       			<input type="submit" value="Login" id="botonLogin">
-    		</form>		
+    </form>		
     <div id="link" style="display:none">
     </div>
-  <a href="#nuevo">Nuevo Usuario</a>
+    <a href="#nuevo">Nuevo Usuario</a>
 	</div>
 </div>
 
@@ -43,6 +43,7 @@
 	<div data-role="header">
 		<h1>Crear Usuario</h1>
 	</div>
+	<div data-role="content">	
   <form id="formularioAltaUsuario" method="post" >
     <label> Usuario </label>
     <input type="text" id="nuevousuario" name=nuevousuario">
@@ -50,6 +51,7 @@
     <input type="password" id="nuevaclave" name="clave" >
     <input type="submit" value="crear" id="botonCrear">
   </form>		
+  </div> 
 </div> 
  
 <div data-role="page" id="home">
@@ -62,7 +64,7 @@
 		<h2> Bienvenido a la aplicacion </h2>
 		<h3> Su usuario y password son válidos</h3>
 	</div>
-
+</div>
 </div> 
 <script src="cordova.js"></script>
 <script src="js/login.js"></script>
